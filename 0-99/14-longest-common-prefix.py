@@ -1,5 +1,5 @@
 
-# SOLUTION 1
+# SOLUTION 1 (Vertical scanning)
 def longestCommonPrefix(self, strs: List[str]) -> str:
     #step 1: error check for emmpy list
     if not strs:
