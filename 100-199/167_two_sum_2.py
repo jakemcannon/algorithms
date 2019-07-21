@@ -1,5 +1,3 @@
-
-
 def twoSum(nums):
 	start = 0
     end = len(numbers) -1
