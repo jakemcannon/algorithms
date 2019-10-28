@@ -68,31 +68,31 @@ class linked_list:
 		id_x = 0
 		cur_node = self.head
 		while True:
-			print("cur_node:" + str(cur_node.data))
-			print("cur_node.next:" + str(cur_node.next.data))
+			# print("cur_node:" + str(cur_node.data))
+			# print("cur_node.next:" + str(cur_node.next.data))
 			prev_node = cur_node
-			print("prev_node:" + str(prev_node.data))
-			print(" ")
+			# print("prev_node:" + str(prev_node.data))
+			# print(" ")
 
 			cur_node = cur_node.next
-			print("cur_node:" + str(cur_node.data))
-			print("cur_node.next:" + str(cur_node.next.data))
-			print("prev_node:" + str(prev_node.data))
-			print("prev_node.next:" + str(prev_node.next.data))
+			# print("cur_node:" + str(cur_node.data))
+			# print("cur_node.next:" + str(cur_node.next.data))
+			# print("prev_node:" + str(prev_node.data))
+			# print("prev_node.next:" + str(prev_node.next.data))
 			print(" ")
 			if id_x == index:
 				prev_node.next = cur_node.next
-				print("cur_node:" + str(cur_node.data))
-				print("cur_node.next:" + str(cur_node.next.data))
-				print("prev_node:" + str(prev_node.data))
-				print("prev_node.next:" + str(prev_node.next.data))
+				# print("cur_node:" + str(cur_node.data))
+				# print("cur_node.next:" + str(cur_node.next.data))
+				# print("prev_node:" + str(prev_node.data))
+				# print("prev_node.next:" + str(prev_node.next.data))
 				return
 			id_x += 1
 
+	# def copy(self):
 
 
 l = linked_list()
-
 
 l.display()
 l.append(1)
@@ -100,8 +100,15 @@ l.append(2)
 l.append(3)
 l.append(4)
 l.display()
-l.remove(2)
-l.display()
+
+l2 = linked_list()
+# How to copy a linked list
+print("Copied LinkedList")
+while l.head.next != None:
+	l2.append(l.head.next.data)
+	l.head = l.head.next
+l2.display()
+
 
 
 
