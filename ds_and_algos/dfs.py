@@ -1,6 +1,10 @@
 # https://www.educative.io/edpresso/how-to-implement-depth-first-search-in-python
 # https://stackoverflow.com/questions/43430309/depth-first-search-dfs-code-in-python/43869149
 
+# This looks like a comprehensive article
+# https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38
+
+
 # Directed
 graph1 = {
 	'A': ['B', 'C'],
